@@ -18,10 +18,8 @@ for volume in volumes['Volumes']:
         unused_volumes.append(volume['VolumeId'])
         size = size + volume['Size']
         iops = iops + volume['Iops']
-    
-
-        print(volume)
-        print("\n" * 5)
+        #print(volume)
+        #print("\n" * 5)
 
 #Email body
 email_body = "##### Unused Volumes ##### \n"
