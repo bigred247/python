@@ -19,7 +19,7 @@ for volume in volumes['Volumes']:
         size = size + volume['Size']
         iops = iops + volume['Iops']
         #print(volume)
-        #print("\n" * 5)
+        #print("\n" * 5) #creates 5 line spaces between output
 
 #Email body
 email_body = "##### Unused Volumes ##### \n"
