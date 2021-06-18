@@ -1,3 +1,5 @@
+# List all bucket names 2
+
 import boto3
 
 # Retrieve the list of existing buckets

@@ -1,4 +1,5 @@
-#diplay which files are in the current working directory
+# diplays which files are in the current working directory
+# on your local laptop/desktop pc
 
 import os
 cwd = os.getcwd()  # Get the current working directory (cwd)

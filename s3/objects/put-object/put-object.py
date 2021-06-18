@@ -6,17 +6,19 @@ client = boto3.client('s3')
 # Variables
 bucket_name = 'lambda-test-create-bucket'
 aws_account = '500441578972'
-file_reader = open('test_file.py').read() #do not need to specify
+file_name = 'employees.csv'
+key = 'json/employees.csv'
+file_reader = open(file_name).read() #do not need to specify
 
 # Function
 put_file = client.put_object(
     ACL='public-read', 
     Body=file_reader,  #do not need to specify
     Bucket=bucket_name,
-    Key='demo/test_file.py',
+    Key=key,
     ServerSideEncryption='AES256',
-    StorageClass='REDUCED_REDUNDANCY',
-    Tagging='python-test-tag',
+    StorageClass='STANDARD',
+    Tagging='uploaded-by-python',
     ExpectedBucketOwner=aws_account
 )
 

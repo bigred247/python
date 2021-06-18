@@ -1,3 +1,5 @@
+THIS IS A DUMMY FILE FOR TESTING UPLOADS
+
 # Create S3 bucket
 import boto3
 client = boto3.client('s3')
