@@ -20,4 +20,5 @@ put_file = client.put_object(
     ExpectedBucketOwner=aws_account
 )
 
+# Output to screen
 print(put_file)
