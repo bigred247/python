@@ -10,3 +10,13 @@ elif user_age < 20:
 else:
     print('You are 30 years old or younger')
     print('Congratulations, you qualify!')
+
+
+
+There can only be one else statement in a single if instruction. 
+If two, Python will show an error.
+
+# a conditional statement must have 
+# at least 1 x if
+# as many elif statements as required
+# and 0 or 1 x else statements
