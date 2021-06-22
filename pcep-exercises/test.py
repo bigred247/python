@@ -1,7 +1,7 @@
                                         [LEGEND]
-when using standard numbers      [ 1,  2,  3,  4,  5]
-when using negative "-" numbers  [-5, -4, -3, -2, -1]
-So -1 maps to 5, -2 maps to 4 and so on
+when using standard numbers      var 1 = [ 1,  2,  3,  4,  5]
+when using negative "-" numbers  var 2 = [-5, -4, -3, -2, -1]
+#So "-1" maps to the farhest variable to the right side to "5", "-2" maps to "4" and so on
 
 list_original = [1, 2, 3, 4, 5]  
 print(list_original[-5:-1])
