@@ -1,13 +1,12 @@
+# Infinite print
 counter = 1
 while counter < 11:
   print(counter)
 
-#What does the above code do?
-# it prints an INFINITE loop of number 1s!!!
-# You will have to ctrl + esc to break from it.,
+# Prints an INFINITE loop of number 1s!!! # You will have to ctrl + esc to break from it.,
 
 
-
+# Incremental print between 1 and 10
 counter = 1
 while counter < 11:
     print(counter)

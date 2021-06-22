@@ -1,4 +1,4 @@
-for counter in range(1, 11, 4):
+for counter in range(1, 13, 4): #excludes 13. so only 1 to 12 are included
     print(counter)
 print('Finished!')
 
