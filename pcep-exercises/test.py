@@ -1,4 +1,12 @@
-def numerical():
-  for i in range(10):
-    yield i%2
-numerical()
+def fun():
+  #global var
+  var = 99
+  print()
+
+var=5
+fun()
+print(var)
+
+
+import
+Import

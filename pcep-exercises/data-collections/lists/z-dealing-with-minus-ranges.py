@@ -46,3 +46,7 @@ print(list_original[-1:-2])
 list_original = [1, 2, 3, 4, 5]
 print(list_original[-1:-1])
 #  = []
+
+list_original = [1, 2, 3, 4, 5] # not sure why? because it has a -1 on one side
+print(list_original[-1:1])
+# = []
