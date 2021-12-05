@@ -2,10 +2,10 @@ import io
 import csv,sys
 actual_header="First Name|Last Name|DOB|Gender|Email|Telephone"
 
-#read file
-with io.open("test.csv","r",encoding="utf")as f1:
+#read file (r means read only)
+with io.open("test.csv","r",encoding="utf")as f1:  ##opening of file to read contents ##f1 just an object which gets on line 6
     data=f1.read()
-    f1.close()
+    f1.close()  ##closing of file otherwise contents of file get buffered in memory 
 
 #validate header count and header fields
 #converting into a list which contains every line as single element
@@ -65,7 +65,7 @@ if(header==actual_header):
 else:
     print("header is not correct please validate")
 
-#write the last execute row count into output csv    
+#write the last execute row count into output csv   (w means read only) 
 with io.open("output.csv","w",encoding="utf-8")as f2:
     f2.write(str(total_line)+"\n")
     f2.close()
