@@ -3,8 +3,8 @@ import csv,sys
 actual_header="First Name|Last Name|DOB|Gender|Email|Telephone"
 
 #read file (r means read only)
-with io.open("test.csv","r",encoding="utf")as f1:  ##opening of file to read contents ##f1 just an object which gets on line 6
-    data=f1.read()
+with io.open("test.csv","r",encoding="utf")as f1:  ##opening of file to read contents  ##f1 is an object which buffers the contents of list 
+    data=f1.read() ##then f1 is called here with a var name of data to read
     f1.close()  ##closing of file otherwise contents of file get buffered in memory 
 
 #validate header count and header fields
