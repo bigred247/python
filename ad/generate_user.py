@@ -1,5 +1,5 @@
 import io
-import csv,sys
+import csv,sys #calling csv and sys modules
 actual_header="First Name|Last Name|DOB|Gender|Email|Telephone"
 
 #read file (r means read only)
