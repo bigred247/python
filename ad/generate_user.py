@@ -3,9 +3,13 @@ import csv,sys #calling csv and sys modules
 actual_header="First Name|Last Name|DOB|Gender|Email|Telephone"
 
 #read file (r means read only)
-with io.open("test.csv","r",encoding="utf")as f1:  ##opening of file to read contents  ##f1 is an object which buffers the contents of list 
-    data=f1.read() ##then f1 is called here with a var name of data to read
-    f1.close()  ##closing of file otherwise contents of file get buffered in memory 
+##opening of file to read contents  ##f1 is an object which buffers the contents of list 
+ ##then f1 is called here with a var name of data to read
+  ##closing of file otherwise contents of file get buffered in memory 
+with io.open("test.csv","r",encoding="utf")as f1:  
+    data=f1.read()
+    f1.close()
+
 
 #validate header count and header fields
 #converting into a list which contains every line as single element
