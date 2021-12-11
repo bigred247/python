@@ -13,6 +13,7 @@ with io.open("test.csv","r",encoding="utf")as f1:
 
 #validate header count and header fields
 #converting into a list which contains every line as single element
+#the -1 excludes 1 line which is the header line
 data=data.split("\n")
 total_line=len(data)-1
 print(f"file has {total_line} lines")
@@ -43,16 +44,16 @@ if(header==actual_header):
     for row in data[1:]:
         #converting into a list which contains every line as single element separated by pipe character
         delimiter_count=row.split("|")
-        #get the count of elements inside the list
+        #get the count (len) of elements (header values) in file
         delimiter_from_file=len(delimiter_count)
         #comparing with actual element count ## 6 is taken from actual headers "First Name|Last Name|DOB|Gender|Email|Telephone"
         if(delimiter_from_file==6):
             #print with line number
             print(f"{line_number}, delimiters are ok")
-            #getting attribute mail & last name
+            #getting attribute Email [4}] & last name [1]
             mail=delimiter_count[4]
             sn=delimiter_count[1]
-            #checking if the mail attribute has value or not
+            #check if the mail and sn attributes exist for a user or not
             if(mail and sn):
                 #if the test.csv file has  values populated for mail and surname
                 print("value is here")
