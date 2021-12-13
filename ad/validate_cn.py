@@ -21,8 +21,8 @@ def gen_cn(gn,counter):
 
 
 #gen_mail is a copy of above function but is for email addresses
-#in this scenrio, the create_ad_user.py is configured to stop creation
-#of any subsequnet user with the same email address 
+#in this scenario, the create_ad_user.py is configured to stop creation
+#of any subsequent user with the same email address 
 def gen_mail(gn,counter):
     if counter==0:
         cn=gn

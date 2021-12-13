@@ -4,7 +4,7 @@ import io
 ou=pyad.adcontainer.ADContainer.from_dn("OU=devops-lab-groups,DC=devops-lab,DC=com")
 
 #the Administrator is granted full control over groups
-#this is a gloabl var because it is not insde the function
+#this is a global var because it is not inside the function
 optional= {"managedBy":"CN=Administrator,CN=Users,DC=devops-lab,DC=com"}
 
 def add_group(row):

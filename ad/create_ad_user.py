@@ -26,7 +26,7 @@ def add_user(row):
     telephoneNumber=user_attributes[5]
     members=user_attributes[6].split(",")
 
-  #splits the file and uses the left side eg. username portion of email as unqiue userID
+  #splits the file and uses the left side eg. username portion of email as unique userID
     sAMAccountName=mail.split("@")[0]
     counter=0
   #final_cn gets called only if the "final_mail=gen_mail(mail, counter)" if condition is met
