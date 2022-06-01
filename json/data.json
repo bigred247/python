@@ -1,0 +1,7 @@
+{
+    "emp_details": [
+            { "name":"John", "age":30, "city":"New York"},
+            { "name":"Mike", "age":20, "city":"California"},
+            { "name":"Jeff", "age":35, "city":"San Francisco"}
+        ]
+}
