@@ -22,5 +22,6 @@ logging.critical('Its critical')   # will print a message to the console
 logging.info('I told you so')  # will not print anything
 logging.debug('Watch out beadles about!')  # will not print anything
 
+##using variables
 logging.error('user %s does not have admin rights', user_1)
 logging.error(f'{user_2} is a muppet!')
