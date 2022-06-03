@@ -1,0 +1,3 @@
+
+# resize and thumbnail
+Another significant difference between the resize() and thumbnail() functions is that the resize() function 'blows up' an image if given parameters that are larger than the original image, while the thumbnail() function doesn't. For example, given an image of size 400x200, a call to resize((1200, 600)) will create a larger-sized image 1200x600; thus, the image will have lost some definition and is likely to be blurry compared to the original. On the other hand, a call to thumbnail((1200, 600)) using the original image will result in an image that keeps its size 400x200 since both the width and height are less than the specified maximum width and height.
